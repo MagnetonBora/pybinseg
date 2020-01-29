@@ -1,0 +1,32 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        img {
+            border: 1px solid black;
+        }
+    </style>
+<body>
+    <div class="container">
+    <h1>Segmentaion app</h1>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="control-label" for="url" style="margin-left: 15px">Source URL:</label>
+            <input class="form-control" name="url" value="{{ url }}" size="80" style="margin-left: 15px" />
+        </div>
+        <input type="submit" />
+    </form>
+    {%if original_image %}
+    <div class="container" style="margin-left: 160px">
+        <div class="row">
+            <div class="col-xs-4">
+                <img src="{{ url_for('static', filename=original_image) }}" alt="image" />
+            </div>
+            <div class="col-xs-4">
+                <img src="{{ url_for('static', filename=result_image) }}" alt="image" />
+            </div>            
+        </div>
+    </div>
+    {% endif %}
+    </div>
+</body>

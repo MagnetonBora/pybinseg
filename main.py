@@ -17,7 +17,7 @@ app = Flask(__name__)
 app.config["IMAGE_UPLOADS"] = 'static'
 
 app.secret_key = 'secret'
-app.debug = True
+app.debug = False
 
 model = load_model('model/architecture.json', 'model/weights.h5')
 
@@ -55,4 +55,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(use_reloader=True)

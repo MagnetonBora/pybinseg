@@ -12,7 +12,7 @@ The dataset for neural network training has been taken from [this](https://githu
 
 ## Deploy on heroku
 
-The easiest way to run the app is to run it on Heroku. So just click this button 👉 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MagnetonBora/pybinseg)
+The easiest way to run the app is to run it on Heroku. Just click this button 👉 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MagnetonBora/pybinseg)
 
 Of course, you need to have an account on [Heroku](https://www.heroku.com/).
 
